@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple webpage demonstrating basic HTML tags for beginners.">
+    <title>HTML Tags for Beginners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to HTML Basics</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#examples">Examples</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Section with an Introduction -->
+        <section id="introduction">
+            <h2>Introduction to HTML</h2>
+            <p>HTML stands for <abbr title="HyperText Markup Language">HTML</abbr>. It's the standard language for creating web pages.</p>
+            <p>HTML elements are represented by <strong>tags</strong>. Tags label pieces of content such as "heading", "paragraph", "table", and so on.</p>
+        </section>
+
+        <!-- Section with Examples -->
+        <section id="examples">
+            <h2>Examples of HTML Tags</h2>
+
+            <!-- Paragraphs -->
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph, with <em>emphasized</em> and <strong>strong</strong> text.</p>
+
+            <!-- Lists -->
+            <h3>Unordered List:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List:</h3>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <!-- Table -->
+            <h3>Simple Table:</h3>
+            <table border="1">
+                <caption>Sample Table</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>24</td>
+                        <td>New York</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>27</td>
+                        <td>Los Angeles</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">End of Data</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <!-- Image -->
+            <h3>Image Example:</h3>
+            <figure>
+                <img src="https://via.placeholder.com/150" alt="Sample Image">
+                <figcaption>Placeholder image from via.placeholder.com</figcaption>
+            </figure>
+
+            <!-- Form -->
+            <h3>Contact Form:</h3>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact us at <a href="mailto:info@example.com">info@example.com</a></p>
+        <address>
+            <p>Christx Foundation sl</p>
+        </address>
+        <p>&copy; 2024 DaVinci Bootcamp</p>
+    </footer>
+</body>
+</html>

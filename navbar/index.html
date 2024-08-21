@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="p-4 bg-gray-800">
+        <div class="container flex items-center justify-between mx-auto">
+            <a href="#" class="text-xl font-bold text-white">Logo</a>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul id="menu" class="absolute right-0 flex-col hidden w-full space-y-2 bg-gray-800 md:flex md:flex-row md:space-y-0 md:space-x-4 md:static top-16 md:w-auto md:bg-transparent md:mt-0" style="margin-top: -3px;">
+                <li><a href="#" class="block px-4 py-2 text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-300 hover:text-white">About</a></li>
+                <li><a href="#" class="block px-4 py-2 text-gray-300 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<script>
+        // JavaScript for toggling the menu visibility
+        const menuButton = document.getElementById('menu-button');
+        const menu = document.getElementById('menu');
+
+        menuButton.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
